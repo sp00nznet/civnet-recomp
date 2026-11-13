@@ -1,0 +1,17 @@
+{
+  "title": "Sid Meier's CivNet",
+  "repo": "sp00nznet/civnet-recomp",
+  "accent": "#3a7a3a",
+  "note": {
+    "windows": "Early build: in game - the map draws and units move; much is untested. The build takes about 10 minutes and 600 MB. Python, capstone, CMake, Ninja and MSYS2's gcc (about 1 GB) are installed if missing."
+  },
+  "game": {
+    "name": "Sid Meier's CivNet",
+    "files": ["CIVNET.EXE|civnet.exe|civnet*.iso"]
+  },
+  "sources": [{ "repo": "sp00nznet/pcrecomp", "ref": "pcrecomp-ne-civnet", "dir": "pcrecomp" }],
+  "setup": {
+    "windows": ["cmd", "/c", "Setup.cmd", "-Yes", "-GameDir", "{game}"]
+  },
+  "play": "CivNet.cmd"
+}
