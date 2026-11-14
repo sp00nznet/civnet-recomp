@@ -20,8 +20,6 @@
   README and a netlab `QA` line.
 - Headless mode, `--headless --record out.mp4`, so runs and captures need no
   screen (REPO_RULES section 10).
-- The toolkit fixes on pcrecomp's `pcrecomp-ne-civnet` merged into `main`, and the
-  setup pinned to `main`.
 - Linux and macOS: a `setup.sh` that cross-compiles the Windows exe for Wine
   (the host is Win32, so a native build waits on pcrecomp's win16 host
   running on win32hle).

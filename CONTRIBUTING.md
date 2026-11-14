@@ -25,8 +25,7 @@ running are fine.
 
 - A bug in the NE lifter, the code map or the Win16 host (a KERNEL, USER, GDI,
   WinG or MMSYSTEM call answered wrong) belongs in
-  [pcrecomp](https://github.com/sp00nznet/pcrecomp), on the branch this game
-  builds from (`pcrecomp-ne-civnet`), not here.
+  [pcrecomp](https://github.com/sp00nznet/pcrecomp), not here.
 - Something only CivNet needs (its WinG lookup, its test hooks) goes in
   `runtime/civnet.c`, with a comment that says what it fixes and why.
 - A wall you got past goes in `docs/bringup.md`: what it looked like, what it

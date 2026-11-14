@@ -13,6 +13,7 @@ All notable changes to this project are documented here. The format follows
   (pcrecomp `tools/ne/wine_spec_to_json.py`), and it is gitignored.
 
 ### Changed
+- Builds against pcrecomp main; the `pcrecomp-ne-civnet` branch is merged.
 - Setup, the docs and the launcher all name the pcrecomp branch the game
   actually needs, `pcrecomp-ne-civnet`; Setup asked for
   `pcrecomp-ne-nativemap`, which lacks the resource-tag fix the map needs.

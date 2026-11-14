@@ -12,7 +12,7 @@ param([switch]$Force, [switch]$Yes, [string]$GameDir = "")
 # ---------------------------------------------------------------- this game
 $Title     = "Sid Meier's CivNet"
 $Exe       = 'civnet.exe'
-$Branch    = 'pcrecomp-ne-civnet'   # the pcrecomp branch with this game's host fixes and the native NE code map (not yet in main)
+$Branch    = 'main'
 $Shortcut  = 'CivNet.cmd'
 $NeedMB    = 600
 # A folder holds the game when CIVNET.EXE is at its root (the CD's root).

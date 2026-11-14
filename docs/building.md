@@ -8,13 +8,13 @@ command.
 Windows 10/11, **Python 3.10+** (`py -3 --version`) with `capstone`, **CMake**
 3.16+, **Ninja**, **MSYS2** with `mingw-w64-x86_64-gcc`
 (`C:\msys64\mingw64\bin\gcc.exe`), **git**, and the pcrecomp toolkit cloned
-**beside** this repository as `pcrecomp`, on branch `pcrecomp-ne-civnet` (or
+**beside** this repository as `pcrecomp`, on `main` (or
 point `PCRECOMP_DIR` at it). The lifter and the runtime must come from the
 same tree.
 
 ```
 some-folder\
-  pcrecomp\        <- git clone -b pcrecomp-ne-civnet https://github.com/sp00nznet/pcrecomp
+  pcrecomp\        <- git clone https://github.com/sp00nznet/pcrecomp
   civnet-recomp\   <- this repository
 ```
 
@@ -44,7 +44,7 @@ On the lab, `netlab build civnet-recomp` builds it on the MinGW builder.
 - `python` opening the Microsoft Store: that's Windows' alias placeholder; use `py -3`.
 - A freshly installed tool isn't on `PATH` until you open a new window.
 - gcc failing to find `cc1`: `C:\msys64\mingw64\bin` isn't on `PATH`.
-- A pcrecomp on `main` or `pcrecomp-ne-nativemap`: they lack this game's
-  resource-tag fix, and the map draws black.
+- An older pcrecomp (before `pcrecomp-ne-civnet` was merged into `main`)
+  lacks this game's resource-tag fix, and the map draws black.
 - No network on the first lift: `wine_spec_to_json.py --specs DIR -o work\win16_imports.json`
   reads the `.spec` files from a local Wine source tree instead.

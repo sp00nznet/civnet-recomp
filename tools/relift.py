@@ -9,7 +9,7 @@ committed. One command, so a re-lift cannot silently skip a step:
 No IDA: pcrecomp builds each module's code map itself (tools/ne/ne_codemap.py,
 the default inside ne_link).
 
-What it runs, all from pcrecomp (PCRECOMP_DIR, default ../pcrecomp, branch pcrecomp-ne-civnet):
+What it runs, all from pcrecomp (PCRECOMP_DIR, default ../pcrecomp, branch main):
   ne/ne_link.py       lift both modules into one numbering, build the image,
                       and regenerate the glue (segments.h, dispatch, stubs)
   ne/patch_borland_eh.py  the Borland EH cleanup-chain guard

@@ -8,8 +8,8 @@ together by pcrecomp's NE front end and run on its Win16 host, which answers
 KERNEL, USER, GDI, WinG and MMSYSTEM with Win32. The game's own code draws
 every screen; nothing is reimplemented.
 
-Built on the [pcrecomp](https://github.com/sp00nznet/pcrecomp) toolchain,
-branch **`pcrecomp-ne-civnet`** (not yet merged into `main`), in the same
+Built on the [pcrecomp](https://github.com/sp00nznet/pcrecomp) toolchain
+(`main`), in the same
 house style as the [Space Bucks](https://github.com/sp00nznet/spacebucks-recomp)
 and [Catz](https://github.com/sp00nznet/catz-recomp) recomps.
 
@@ -31,8 +31,8 @@ installer release yet.
 3. Play with **`CivNet.cmd`** in that folder.
 
 The script asks before installing anything (Python 3.10+ with `capstone`,
-CMake, Ninja, MSYS2's MinGW-w64 gcc), clones pcrecomp beside this folder on
-branch `pcrecomp-ne-civnet` if it is missing, finds the CD or asks where the
+CMake, Ninja, MSYS2's MinGW-w64 gcc), clones pcrecomp beside this folder
+if it is missing, finds the CD or asks where the
 game is (`-GameDir E:\` or `-GameDir civnet.iso`; `-Yes` answers yes to
 everything), copies it into `game\`, lifts it and builds `build\civnet.exe`.
 The lift downloads Wine's Win16 ordinal tables once (a few hundred KB) to
@@ -71,7 +71,7 @@ Real output of `build\civnet.exe`, recompiled code throughout, captured with
 
 ## Documentation
 
-- [docs/building.md](docs/building.md): building by hand, the toolkit branch, the trip-ups
+- [docs/building.md](docs/building.md): building by hand, the trip-ups
 - [docs/testing.md](docs/testing.md): scripted input and captures (`CIVNET_KEYS`, `CIVNET_SHOT`)
 - [docs/bringup.md](docs/bringup.md): every wall so far and its fix
 - [ROADMAP.md](ROADMAP.md), [CHANGELOG.md](CHANGELOG.md), [CONTRIBUTING.md](CONTRIBUTING.md)
