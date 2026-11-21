@@ -6,6 +6,8 @@ All notable changes to this project are documented here. The format follows
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-20
+
 ### Removed
 - `analysis/win16_imports.json`. It was built from Wine's `.spec` files, which
   are LGPL, so it isn't ours to carry in an MIT repository. `tools/relift.py`
